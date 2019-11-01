@@ -1,0 +1,76 @@
+meta(charset='utf-8')
+meta(name='viewport' content='width=device-width,initial-scale=1')
+title Kazue Sasatani
+//- link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css')
+//- script(defer src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
+link(href='https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap' rel='stylesheet')
+link(rel='stylesheet' href='/css/index.css')
+canvas#canvas-basic
+section.hero.is-fullheight
+  .hero-head
+    nav.navbar.is-fixed-top#mainNavbar
+      .container
+        .navbar-brand
+          span.navbar-burger.burger(data-target='navbarMenuHeroB')
+            span
+            span
+            span
+        #navbarMenuHeroB.navbar-menu
+          .navbar-end
+            a.navbar-item(href='#').
+              
+              Home
+              
+            a.navbar-item(href='#About').
+              
+              About
+              
+            a.navbar-item(href='#Portfolio').
+              
+              Portfolio
+              
+  .hero-body
+    #segakazzz.container.has-text-centered
+      p.title.
+        
+        Kazue Sasatani
+        
+      p.subtitle.
+        
+        Full-Stack Developer
+      
+      .link-icons
+        .link-icon
+          a(href="https://github.com/segakazzz")
+            i.fab.fa-github.fa-5x
+        .link-icon
+          a(href="https://www.linkedin.com/in/kazue-sasatani-78913a187/")
+            i.fab.fa-linkedin.fa-5x
+      
+      //- hr
+
+      //- .location
+      //-   i.fas.fa-map-marker-alt.fa-5x
+      //-   div
+      //-     p.
+      //-       Tokyo, Japan
+
+section#About.pages
+  .knowledge-icons
+    .knowledge-icon
+      i.fab.fa-node.fa-10x
+    .knowledge-icon
+      i.fab.fa-python.fa-10x
+    .knowledge-icon
+      i.fab.fa-css3-alt.fa-10x
+    .knowledge-icon
+      i.fab.fa-html5.fa-10x
+    .knowledge-icon
+      i.fab.fa-php.fa-10x
+
+  
+section#Portfolio
+  #portfolioMain
+    .grid
+
+script(src='/bundle.js')

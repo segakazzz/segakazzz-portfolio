@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+
+// Font Awesome
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    // background-color: #585858;
+    // color: blanchedalmond;
+    min-height: 100vh;
+    // background-color: #474952;
+}
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#segakazzz {
+    font-family: 'Fredericka the Great', cursive;
+
+    p.title {
+        font-size: 4rem;
+        font-weight: lighter;
+    }
+
+    p.subtitle {
+        font-size: 2rem;
+    }
+
+    .link-icons {
+        display: flex;
+        justify-content: center;
+
+        .link-icon {
+            margin: 10px;
+        }
+
+        a:hover,
+        a:visited,
+        a:link,
+        a:active {
+            text-decoration: none !important;
+        }
+
+        a {
+            color: #535353;
+        }
+    }
+
+    .location {
+        p {
+            font-size: 2rem;
+        }
+    }
+}
+
+#mainNavbar {
+    a.navbar-item {
+
+        &:link,
+        &:visited {
+            background: none;
+            color: whitesmoke;
+        }
+
+        &:hover,
+        &:active {
+            background: none;
+            color: #a5a4a4;
+        }
+    }
+
+}
+
+.pages {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#About {
+    padding: 48px 24px;
+    background-color: #6c7892;
+    height: 100vh;
+    .knowledge-icons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .knowledge-icon{
+            margin: 24px;
+        }
+    }
+}
+
+#Portfolio {
+    background-color: #444b5c;
+    min-height: 100vh;
+    padding: 48px 24px;
+
+    .grid-item {
+        // background: white;
+        width: 400px;
+        padding: 10px;
+    }
+
+    .grid {
+        margin: 0 auto;
+    }
+
+    .box {
+        margin: 10px;
+        background-color: #717d99;
+    }
+}
