@@ -11488,21 +11488,55 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 
+/*!
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url(/webfonts/fa-regular-400.eot);
+  src: url(/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(/webfonts/fa-regular-400.woff2) format("woff2"), url(/webfonts/fa-regular-400.woff) format("woff"), url(/webfonts/fa-regular-400.ttf) format("truetype"), url(/webfonts/fa-regular-400.svg#fontawesome) format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
+/*!
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url(/webfonts/fa-solid-900.eot);
+  src: url(/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(/webfonts/fa-solid-900.woff2) format("woff2"), url(/webfonts/fa-solid-900.woff) format("woff"), url(/webfonts/fa-solid-900.ttf) format("truetype"), url(/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
 html {
   font-size: 16px; }
 
-body {
-  min-height: 100vh; }
-
-#canvas-basic {
+#canvas-basic,
+#canvas-basic-about,
+#canvas-basic-portfolio {
   position: absolute;
   display: block;
-  width: 100%;
-  height: 100vh;
-  top: 0;
+  width: 100vw;
   right: 0;
-  bottom: 0;
-  left: 0; }
+  left: 0;
+  z-index: -1; }
+
+canvas {
+  height: 0;
+  width: 0; }
 
 #segakazzz {
   font-family: 'Fredericka the Great', cursive; }
@@ -11535,26 +11569,52 @@ body {
   color: #a5a4a4; }
 
 .pages {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  min-height: 100vh; }
 
 #About {
+  color: whitesmoke;
+  font-family: 'Neucha', cursive;
   padding: 48px 24px;
-  background-color: #6c7892;
-  height: 100vh; }
-  #About .knowledge-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #About .section-title {
+    font-size: 2rem;
+    text-align: center; }
+  #About .skills {
     width: 100%;
     display: flex;
-    justify-content: center; }
-    #About .knowledge-icons .knowledge-icon {
-      margin: 24px; }
+    justify-content: center;
+    flex-wrap: wrap; }
+    #About .skills .skill {
+      margin: 24px;
+      text-align: center; }
+      #About .skills .skill p {
+        margin: 5px;
+        font-size: 1.5rem; }
+  #About .experiences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    #About .experiences .exprerience {
+      width: 100%;
+      margin: 5px;
+      text-align: center; }
+    #About .experiences p {
+      margin: 8px 0px;
+      font-size: 1.5rem; }
+    #About .experiences i {
+      margin-right: 10px; }
 
 #Portfolio {
-  background-color: #444b5c;
+  color: whitesmoke;
+  font-family: 'Neucha', cursive;
   min-height: 100vh;
   padding: 48px 24px; }
+  #Portfolio .section-title {
+    text-align: center;
+    font-size: 2rem; }
   #Portfolio .grid-item {
     width: 400px;
     padding: 10px; }

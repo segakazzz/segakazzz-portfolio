@@ -1,12 +1,11 @@
 meta(charset='utf-8')
 meta(name='viewport' content='width=device-width,initial-scale=1')
 title Kazue Sasatani
-//- link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css')
-//- script(defer src='https://use.fontawesome.com/releases/v5.3.1/js/all.js')
-link(href='https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap' rel='stylesheet')
+link(href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Handlee|Neucha&display=swap' rel='stylesheet')
 link(rel='stylesheet' href='/css/index.css')
+
 canvas#canvas-basic
-section.hero.is-fullheight
+section.hero.is-fullheight.pages#Cover
   .hero-head
     nav.navbar.is-fixed-top#mainNavbar
       .container
@@ -55,21 +54,104 @@ section.hero.is-fullheight
       //-     p.
       //-       Tokyo, Japan
 
+canvas#canvas-basic-about
 section#About.pages
-  .knowledge-icons
-    .knowledge-icon
-      i.fab.fa-node.fa-10x
-    .knowledge-icon
-      i.fab.fa-python.fa-10x
-    .knowledge-icon
-      i.fab.fa-css3-alt.fa-10x
-    .knowledge-icon
-      i.fab.fa-html5.fa-10x
-    .knowledge-icon
-      i.fab.fa-php.fa-10x
-
-  
+  div.columns
+    div.is-half-desktop.column
+      div.section-title.
+        skills
+      .skills
+        .skill
+          p.
+            nodeJS
+          i.fab.fa-node.fa-4x
+        .skill
+          p.
+            python
+          i.fab.fa-python.fa-4x
+        .skill
+          p.
+            php
+          i.fab.fa-php.fa-4x
+        .skill
+          p.
+            database
+          i.fas.fa-database.fa-4x
+      .skills
+        .skill
+          p.
+            css
+          i.fab.fa-css3-alt.fa-4x
+        .skill
+          p.
+            html
+          i.fab.fa-html5.fa-4x
+        .skill
+          p.
+            react
+          i.fab.fa-react.fa-4x
+        .skill
+          p.
+            sass
+          i.fab.fa-sass.fa-4x
+      .skills
+        .skill
+          p.
+            windows
+          i.fab.fa-windows.fa-4x
+        .skill
+          p.
+            macos
+          i.fab.fa-apple.fa-5x
+        .skill
+          p.
+            linux
+          i.fab.fa-linux.fa-5x
+    div.is-half-desktop.column
+      div.section-title.
+        experience
+      div.experiences
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Full-Stack Web Development
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Infrastructure Support
+        .exprerience    
+          p
+            i.fas.fa-check-circle
+            | 3rd party application arrangement
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Network connectivity arrangement
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Financial Industory
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Pipe & Supply Industory
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Procurement System   
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Accounting System    
+        .exprerience
+          p
+            i.fas.fa-check-circle
+            | Securities Settlement System
+               
+canvas#canvas-basic-portfolio
 section#Portfolio
+  div.section-title.
+    portfolio
   #portfolioMain
     .grid
 
