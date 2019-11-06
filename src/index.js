@@ -17,20 +17,29 @@ const about = document.querySelector('#About')
 const cover = document.querySelector('#Cover')
 
 const imageLoadedCount = 0
-// granim.style.height = `${Math.round(navbar.clientHeight / window.innerHeight * 100)}%`
 
-works.map(function (obj) {
-  // console.log(obj.img)
+const portfolioHtmlArray = works.map(function(obj){
   const loadedImage = require(`${obj.img}`)
-  const img = new Image()
-  img.src = loadedImage
-  const divGridItem = document.createElement('div')
-  divGridItem.classList.add('grid-item')
-  // divGridItem.innerHTML = '<i class="fab fa-github"></i>'
-  divGridItem.appendChild(img)
-  allGrids.appendChild(divGridItem)
-  // const img = document.createElement
+  return `
+  <div class="grid-item">
+    <div class="grid-item-inner card">
+      <div class="portfolio-filter">
+      <div class="portfolio-title">${obj.title}</div>
+      <div class="portfolio-text"><p>${obj.text}</p></div>
+      <div class="portfolio-technologies"><p>${obj.technologies}</p></div>
+      <div class="portfolio-links">
+        <a href="${obj.url}"><i class="fas fa-external-link-square-alt fa-5x"></i></a>
+        <a href="${obj.githubUrl}"><i class="fab fa-github fa-5x"></i></a>
+      </div>
+      </div>
+      <img src="${loadedImage}">
+    </div>
+  </div>
+  `
 })
+
+allGrids.innerHTML = portfolioHtmlArray.join('')
+// console.log(portfolioHtmlArray)
 
 const imgElements = document.querySelectorAll('img')
 
@@ -83,55 +92,56 @@ function setHeightAndLocation (element, mirrorElement) {
   element.style.top = `${mirrorRect.top - bodyRect.top}px`
 }
 
+function generateGranim(elementId, direction, gradientsArray){
+  return new Granim({
+    element: '#' + elementId,
+    direction: direction,
+    isPausedWhenNotInView: true,
+    states: {
+      'default-state': {
+        gradients: gradientsArray
+      }
+    }
+  })
+}
+
+function generatePortfolio(){
+  const portfolio = allGrids.querySelectorAll('.grid-item')
+  portfolio.forEach(function(elem){
+    const img = elem.getElementsByTagName("IMG")[0]
+    const filter = elem.getElementsByClassName("portfolio-filter")[0]
+    const imgRect = img.getBoundingClientRect()
+    filter.style.width = imgRect.width
+    filter.style.height = imgRect.height
+    
+  })
+}
+
 function afterImageLoaded () {
   masonry()
   setHeightAndLocation(granim, cover)
   setHeightAndLocation(granimAbout, about)
   setHeightAndLocation(granimPortfolio, portfolio)
-  let granimInstance = new Granim({
-    element: '#canvas-basic',
-    direction: 'left-right',
-    isPausedWhenNotInView: true,
-    states: {
-      'default-state': {
-        gradients: [
-          ['#e1eec3', '#f05053'],
-          ['#ff9966', '#ff5e62'],
-          ['#00F260', '#0575E6']
-        ]
-      }
-    }
-  })
 
-  let granimInstance2 = new Granim({
-    element: '#canvas-basic-about',
-    direction: 'left-right',
-    isPausedWhenNotInView: true,
-    states: {
-      'default-state': {
-        gradients: [
-          ['#00F260', '#0575E6'],
-          ['#e1eec3', '#f05053'],
-          ['#ff9966', '#ff5e62']
-        ]
-      }
-    }
-  })
+  generateGranim('canvas-basic', 'left-right', [
+    ['#e1eec3', '#f05053'],
+    ['#ff9966', '#ff5e62'],
+    ['#00F260', '#0575E6']
+  ])
 
-  let granimInstance3 = new Granim({
-    element: '#canvas-basic-portfolio',
-    direction: 'left-right',
-    isPausedWhenNotInView: true,
-    states: {
-      'default-state': {
-        gradients: [
-          ['#ff9966', '#ff5e62'],
-          ['#00F260', '#0575E6'],
-          ['#e1eec3', '#f05053']
-        ]
-      }
-    }
-  })
+  generateGranim('canvas-basic-about', 'left-right', [
+    ['#00F260', '#0575E6'],
+    ['#e1eec3', '#f05053'],
+    ['#ff9966', '#ff5e62']
+  ])
+
+  generateGranim('canvas-basic-portfolio', 'left-right', [
+    ['#ff9966', '#ff5e62'],
+    ['#00F260', '#0575E6'],
+    ['#e1eec3', '#f05053']
+  ])
+
+  generatePortfolio()
 }
 
 $(function () {

@@ -26,7 +26,7 @@ html {
     // height: 100vh;
 }
 
-canvas{
+canvas {
     height: 0;
     width: 0;
 }
@@ -34,22 +34,26 @@ canvas{
 
 #segakazzz {
     font-family: 'Fredericka the Great', cursive;
+    color: whitesmoke;
 
     p.title {
         font-size: 4rem;
         font-weight: lighter;
+        color: whitesmoke;
     }
 
     p.subtitle {
         font-size: 2rem;
+        color: whitesmoke;
     }
 
     .link-icons {
         display: flex;
         justify-content: center;
+        margin: 25px 0;
 
         .link-icon {
-            margin: 10px;
+            margin: 0 50px;
         }
 
         a:hover,
@@ -60,7 +64,7 @@ canvas{
         }
 
         a {
-            color: #535353;
+            color: whitesmoke;
         }
     }
 
@@ -103,6 +107,7 @@ canvas{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .section-title {
         // z-index: 2;
         font-size: 2rem;
@@ -126,20 +131,24 @@ canvas{
             }
         }
     }
+
     .experiences {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        .exprerience{
+
+        .exprerience {
             width: 100%;
             margin: 5px;
             text-align: center;
         }
+
         p {
             margin: 8px 0px;
             font-size: 1.5rem;
         }
+
         i {
             margin-right: 10px;
         }
@@ -165,6 +174,51 @@ canvas{
         // background: white;
         width: 400px;
         padding: 10px;
+
+        .grid-item-inner {
+            position: relative;
+            img {
+                position: abolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .portfolio-title{
+            font-size: 2rem;
+        }
+        .portfolio-filter {
+            background-color: gray;
+            color: whitesmoke;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            i {
+                margin: 10px;
+            }
+            a:visited,
+            a:link,
+            a:active {
+                text-decoration: none !important;
+            }
+    
+            a {
+                color: whitesmoke;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        .portfolio-links{
+            display: flex;
+        }
+
+
     }
 
     .grid {

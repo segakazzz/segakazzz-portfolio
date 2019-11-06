@@ -11539,24 +11539,28 @@ canvas {
   width: 0; }
 
 #segakazzz {
-  font-family: 'Fredericka the Great', cursive; }
+  font-family: 'Fredericka the Great', cursive;
+  color: whitesmoke; }
   #segakazzz p.title {
     font-size: 4rem;
-    font-weight: lighter; }
+    font-weight: lighter;
+    color: whitesmoke; }
   #segakazzz p.subtitle {
-    font-size: 2rem; }
+    font-size: 2rem;
+    color: whitesmoke; }
   #segakazzz .link-icons {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 25px 0; }
     #segakazzz .link-icons .link-icon {
-      margin: 10px; }
+      margin: 0 50px; }
     #segakazzz .link-icons a:hover,
     #segakazzz .link-icons a:visited,
     #segakazzz .link-icons a:link,
     #segakazzz .link-icons a:active {
       text-decoration: none !important; }
     #segakazzz .link-icons a {
-      color: #535353; }
+      color: whitesmoke; }
   #segakazzz .location p {
     font-size: 2rem; }
 
@@ -11618,6 +11622,37 @@ canvas {
   #Portfolio .grid-item {
     width: 400px;
     padding: 10px; }
+    #Portfolio .grid-item .grid-item-inner {
+      position: relative; }
+      #Portfolio .grid-item .grid-item-inner img {
+        position: abolute;
+        top: 0;
+        left: 0; }
+    #Portfolio .grid-item .portfolio-title {
+      font-size: 2rem; }
+    #Portfolio .grid-item .portfolio-filter {
+      background-color: gray;
+      color: whitesmoke;
+      opacity: 0.8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #Portfolio .grid-item .portfolio-filter i {
+        margin: 10px; }
+      #Portfolio .grid-item .portfolio-filter a:visited,
+      #Portfolio .grid-item .portfolio-filter a:link,
+      #Portfolio .grid-item .portfolio-filter a:active {
+        text-decoration: none !important; }
+      #Portfolio .grid-item .portfolio-filter a {
+        color: whitesmoke; }
+      #Portfolio .grid-item .portfolio-filter p {
+        font-size: 1rem; }
+    #Portfolio .grid-item .portfolio-links {
+      display: flex; }
   #Portfolio .grid {
     margin: 0 auto; }
   #Portfolio .box {
