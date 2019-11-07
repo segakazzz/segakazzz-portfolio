@@ -3,20 +3,28 @@ const Granim = require('granim')
 const Masonry = require('masonry-layout')
 const $ = require('jquery')
 const { works } = require('./data')
-// const img = require('./../img/scene-it.png')
+// const favicon = require('./favicon/favicon.ico')
 
-console.log(__webpack_public_path__)
+// console.log(__webpack_public_path__)
 
 const navbar = document.querySelector('nav#main-navbar')
 const granim = document.querySelector('#canvas-basic')
 const granimAbout = document.querySelector('#canvas-basic-about')
 const granimPortfolio = document.querySelector('#canvas-basic-portfolio')
+const granimExperience = document.querySelector('#canvas-basic-experience')
 const allGrids = document.querySelector('#portfolioMain .grid')
 const portfolio = document.querySelector('#Portfolio')
 const about = document.querySelector('#About')
 const cover = document.querySelector('#Cover')
+const experience = document.querySelector('#Experience')
 
-const imageLoadedCount = 0
+const imgSegakazzz = document.querySelector('#img-segakazzz')
+imgSegakazzz.innerHTML = selfPhotoHtml()
+
+function selfPhotoHtml (){
+  const loadedImage = require('./img/kazuesasatani.jpg')
+  return `<img src="${loadedImage}">`
+}
 
 const portfolioHtmlArray = works.map(function(obj){
   const loadedImage = require(`${obj.img}`)
@@ -28,8 +36,8 @@ const portfolioHtmlArray = works.map(function(obj){
       <div class="portfolio-text"><p>${obj.text}</p></div>
       <div class="portfolio-technologies"><p>${obj.technologies}</p></div>
       <div class="portfolio-links">
-        <a href="${obj.url}"><i class="fas fa-external-link-square-alt fa-5x"></i></a>
-        <a href="${obj.githubUrl}"><i class="fab fa-github fa-5x"></i></a>
+        <a href="${obj.url}"><i class="fas fa-external-link-square-alt fa-3x"></i></a>
+        <a href="${obj.githubUrl}"><i class="fab fa-github fa-3x"></i></a>
       </div>
       </div>
       <img src="${loadedImage}">
@@ -122,8 +130,9 @@ function afterImageLoaded () {
   setHeightAndLocation(granim, cover)
   setHeightAndLocation(granimAbout, about)
   setHeightAndLocation(granimPortfolio, portfolio)
+  setHeightAndLocation(granimExperience, experience)
 
-  generateGranim('canvas-basic', 'left-right', [
+  generateGranim('canvas-basic', 'top-bottom', [
     ['#e1eec3', '#f05053'],
     ['#ff9966', '#ff5e62'],
     ['#00F260', '#0575E6']
@@ -136,6 +145,12 @@ function afterImageLoaded () {
   ])
 
   generateGranim('canvas-basic-portfolio', 'left-right', [
+    ['#ff9966', '#ff5e62'],
+    ['#00F260', '#0575E6'],
+    ['#e1eec3', '#f05053']
+  ])
+
+  generateGranim('canvas-basic-experience', 'top-bottom', [
     ['#ff9966', '#ff5e62'],
     ['#00F260', '#0575E6'],
     ['#e1eec3', '#f05053']
@@ -154,3 +169,14 @@ $(function () {
     return false
   })
 })
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('#'+burger.dataset.target);
+burger.addEventListener('click', function() {
+    burger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+});
+
+window.onresize = function () {
+  afterImageLoaded()
+};

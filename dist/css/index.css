@@ -11526,7 +11526,8 @@ html {
 
 #canvas-basic,
 #canvas-basic-about,
-#canvas-basic-portfolio {
+#canvas-basic-portfolio,
+#canvas-basic-experience {
   position: absolute;
   display: block;
   width: 100vw;
@@ -11561,8 +11562,16 @@ canvas {
       text-decoration: none !important; }
     #segakazzz .link-icons a {
       color: whitesmoke; }
-  #segakazzz .location p {
-    font-size: 2rem; }
+
+#mainNavbar .navbar-menu.is-active {
+  background-color: transparent;
+  opacity: 0.8; }
+  #mainNavbar .navbar-menu.is-active a.navbar-item:link, #mainNavbar .navbar-menu.is-active a.navbar-item:visited {
+    background: none;
+    color: white; }
+  #mainNavbar .navbar-menu.is-active a.navbar-item:hover, #mainNavbar .navbar-menu.is-active a.navbar-item:active {
+    background: none;
+    color: #c2c1c1; }
 
 #mainNavbar a.navbar-item:link, #mainNavbar a.navbar-item:visited {
   background: none;
@@ -11575,41 +11584,60 @@ canvas {
 .pages {
   min-height: 100vh; }
 
-#About {
+#Experience, #About {
   color: whitesmoke;
   font-family: 'Neucha', cursive;
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  #About .section-title {
+  #Experience .section-title, #About .section-title {
     font-size: 2rem;
-    text-align: center; }
-  #About .skills {
+    text-align: center;
+    margin-bottom: 20px; }
+  #Experience .skills, #About .skills {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
-    #About .skills .skill {
+    #Experience .skills .skill, #About .skills .skill {
       margin: 24px;
       text-align: center; }
-      #About .skills .skill p {
+      #Experience .skills .skill p, #About .skills .skill p {
         margin: 5px;
         font-size: 1.5rem; }
-  #About .experiences {
+  #Experience .experiences, #About .experiences {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    #About .experiences .exprerience {
+    #Experience .experiences .exprerience, #About .experiences .exprerience {
       width: 100%;
       margin: 5px;
       text-align: center; }
-    #About .experiences p {
+    #Experience .experiences p, #About .experiences p {
       margin: 8px 0px;
       font-size: 1.5rem; }
-    #About .experiences i {
+    #Experience .experiences i, #About .experiences i {
       margin-right: 10px; }
+  #Experience #img-segakazzz, #About #img-segakazzz {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #Experience #img-segakazzz img, #About #img-segakazzz img {
+      max-width: 350px;
+      border-radius: 50%; }
+  #Experience .space-20px, #About .space-20px {
+    height: 20px; }
+  #Experience .space-50px, #About .space-50px {
+    height: 50px; }
+  #Experience .text, #About .text {
+    font-size: 1.2rem; }
+  #Experience .location, #About .location {
+    text-align: center; }
+    #Experience .location p, #About .location p {
+      font-size: 2rem; }
 
 #Portfolio {
   color: whitesmoke;
@@ -11618,7 +11646,11 @@ canvas {
   padding: 48px 24px; }
   #Portfolio .section-title {
     text-align: center;
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-bottom: 20px; }
+  #Portfolio .notice {
+    text-align: center;
+    font-size: 1.5rem; }
   #Portfolio .grid-item {
     width: 400px;
     padding: 10px; }
@@ -11630,10 +11662,12 @@ canvas {
         left: 0; }
     #Portfolio .grid-item .portfolio-title {
       font-size: 2rem; }
+    #Portfolio .grid-item .portfolio-filter:hover {
+      opacity: 0.9; }
     #Portfolio .grid-item .portfolio-filter {
-      background-color: gray;
+      background-color: #585858;
       color: whitesmoke;
-      opacity: 0.8;
+      opacity: 0.4;
       position: absolute;
       top: 0;
       left: 0;

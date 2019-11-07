@@ -16,7 +16,8 @@ html {
 
 #canvas-basic,
 #canvas-basic-about,
-#canvas-basic-portfolio {
+#canvas-basic-portfolio,
+#canvas-basic-experience {
     position: absolute;
     display: block;
     width: 100vw;
@@ -67,15 +68,29 @@ canvas {
             color: whitesmoke;
         }
     }
-
-    .location {
-        p {
-            font-size: 2rem;
-        }
-    }
 }
 
+
 #mainNavbar {
+    .navbar-menu.is-active{
+        background-color: transparent;
+        opacity: 0.8;
+        a.navbar-item {
+
+            &:link,
+            &:visited {
+                background: none;
+                color: white;
+            }
+    
+            &:hover,
+            &:active {
+                background: none;
+                color: #c2c1c1;
+            }
+        }
+
+    }   
     a.navbar-item {
 
         &:link,
@@ -97,7 +112,7 @@ canvas {
     min-height: 100vh;
 }
 
-#About {
+#Experience, #About {
     // z-index: 1;
     color: whitesmoke;
     font-family: 'Neucha', cursive;
@@ -112,6 +127,7 @@ canvas {
         // z-index: 2;
         font-size: 2rem;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .skills {
@@ -153,6 +169,35 @@ canvas {
             margin-right: 10px;
         }
     }
+    #img-segakazzz{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 350px;
+            border-radius: 50%;
+        }
+    }
+
+    .space-20px {
+        height: 20px;
+    }
+
+    .space-50px {
+        height: 50px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .location {
+        text-align: center;
+        p {
+            font-size: 2rem;
+        }
+    }
 }
 
 #Portfolio {
@@ -168,6 +213,12 @@ canvas {
         // z-index: 2;
         text-align: center;
         font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .notice{
+        text-align: center;
+        font-size: 1.5rem;
     }
 
     .grid-item {
@@ -187,10 +238,13 @@ canvas {
         .portfolio-title{
             font-size: 2rem;
         }
+        .portfolio-filter:hover {
+            opacity: 0.9;
+        }
         .portfolio-filter {
-            background-color: gray;
+            background-color: rgb(88, 88, 88);
             color: whitesmoke;
-            opacity: 0.8;
+            opacity: 0.4;
             position: absolute;
             top: 0;
             left: 0;

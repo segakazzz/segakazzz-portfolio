@@ -10,39 +10,38 @@ section.hero.is-fullheight.pages#Cover
     nav.navbar.is-fixed-top#mainNavbar
       .container
         .navbar-brand
-          span.navbar-burger.burger(data-target='navbarMenuHeroB')
+          div.navbar-burger.burger(data-target='navbarMenuHeroB')
             span
             span
             span
         #navbarMenuHeroB.navbar-menu
           .navbar-end
             a.navbar-item(href='#').
-              
+
               Home
-              
+
             a.navbar-item(href='#About').
-              
+
               About
-              
+
+            a.navbar-item(href='#Experience').
+
+              Experience
+
             a.navbar-item(href='#Portfolio').
-              
+
               Portfolio
-              
+
   .hero-body
     #segakazzz.container.has-text-centered
       p.title.
-        
+
         Kazue Sasatani
-        
+
       p.subtitle.
-        
+
         Full-Stack Developer
 
-      .location
-        i.fas.fa-map-marker-alt.fa-5x
-        div
-          p.
-            Tokyo, Japan
 
       .link-icons
         .link-icon
@@ -51,12 +50,43 @@ section.hero.is-fullheight.pages#Cover
         .link-icon
           a(href="https://www.linkedin.com/in/kazue-sasatani-78913a187/")
             i.fab.fa-linkedin.fa-5x
-      
-      //- hr
+        .link-icon
+          a(href="https://www.facebook.com/segakazue")
+            i.fab.fa-facebook.fa-5x    
 
+      //- hr
 
 canvas#canvas-basic-about
 section#About.pages
+  div.columns
+    div.is-half-desktop.column
+      div#img-segakazzz.
+        dkjfldj
+    div.is-half-desktop.column
+      div.section-title.
+        About Me
+      .text.
+        kdsjflsdjflks lsdjflsj kdskgj skjg kdsj ksdjg jsd;jg s;djg skjgklsjdg klsjd ksjk gjskd gskld 
+        jgskl jksdj gklsdj gk dkjgdk dfkj gkdfj kljdkg fjdfgj fdl;kg ld;kg dl;klfdk ldf sm kldsg sdjg;ls  kdsl; kglskg l;s
+        kdsjflsdjflks lsdjflsj kdskgj skjg kdsj ksdjg jsd;jg s;djg skjgklsjdg klsjd ksjk gjskd gskld 
+        jgskl jksdj gklsdj gk dkjgdk dfkj gkdfj kljdkg fjdfgj fdl;kg ld;kg dl;klfdk ldf sm kldsg sdjg;ls  kdsl; kglskg l;s
+        kdsjflsdjflks lsdjflsj kdskgj skjg kdsj ksdjg jsd;jg s;djg skjgklsjdg klsjd ksjk gjskd gskld 
+        jgskl jksdj gklsdj gk dkjgdk dfkj gkdfj kljdkg fjdfgj fdl;kg ld;kg dl;klfdk ldf sm kldsg sdjg;ls  kdsl; kglskg l;s
+        kdsjflsdjflks lsdjflsj kdskgj skjg kdsj ksdjg jsd;jg s;djg skjgklsjdg klsjd ksjk gjskd gskld 
+        jgskl jksdj gklsdj gk dkjgdk dfkj gkdfj kljdkg fjdfgj fdl;kg ld;kg dl;klfdk ldf sm kldsg sdjg;ls  kdsl; kglskg l;s
+        kdsjflsdjflks lsdjflsj kdskgj skjg kdsj ksdjg jsd;jg s;djg skjgklsjdg klsjd ksjk gjskd gskld 
+        jgskl jksdj gklsdj gk dkjgdk dfkj gkdfj kljdkg fjdfgj fdl;kg ld;kg dl;klfdk ldf sm kldsg sdjg;ls  kdsl; kglskg l;s
+
+      .space-50px
+      .location
+        i.fas.fa-map-marker-alt.fa-5x
+        div
+          p.
+            Tokyo, Japan
+
+
+canvas#canvas-basic-experience
+section#Experience.pages
   div.columns
     div.is-half-desktop.column
       div.section-title.
@@ -131,6 +161,10 @@ section#About.pages
         .exprerience
           p
             i.fas.fa-check-circle
+            | Machine Learning            
+        .exprerience
+          p
+            i.fas.fa-check-circle
             | Financial Industory
         .exprerience
           p
@@ -148,11 +182,13 @@ section#About.pages
           p
             i.fas.fa-check-circle
             | Securities Settlement System
-               
+
 canvas#canvas-basic-portfolio
 section#Portfolio
   div.section-title.
     portfolio
+  div.notice.
+    More works in private repository
   #portfolioMain
     .grid
 

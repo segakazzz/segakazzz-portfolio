@@ -575,7 +575,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\".\": \"./src/index.js\",\n\t\"./\": \"./src/index.js\",\n\t\"./data\": \"./src/data.js\",\n\t\"./data.js\": \"./src/data.js\",\n\t\"./img/anpanman.png\": \"./src/img/anpanman.png\",\n\t\"./img/go-giter-adventures.png\": \"./src/img/go-giter-adventures.png\",\n\t\"./img/kazuesasatani.jpg\": \"./src/img/kazuesasatani.jpg\",\n\t\"./img/mondrian.png\": \"./src/img/mondrian.png\",\n\t\"./img/scene-it.png\": \"./src/img/scene-it.png\",\n\t\"./index\": \"./src/index.js\",\n\t\"./index.js\": \"./src/index.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^.*$\";\n\n//# sourceURL=webpack:///./src_sync_^.*$?");
+eval("var map = {\n\t\".\": \"./src/index.js\",\n\t\"./\": \"./src/index.js\",\n\t\"./data\": \"./src/data.js\",\n\t\"./data.js\": \"./src/data.js\",\n\t\"./favicon/android-chrome-192x192.png\": \"./src/favicon/android-chrome-192x192.png\",\n\t\"./favicon/android-chrome-512x512.png\": \"./src/favicon/android-chrome-512x512.png\",\n\t\"./favicon/apple-touch-icon.png\": \"./src/favicon/apple-touch-icon.png\",\n\t\"./favicon/favicon-16x16.png\": \"./src/favicon/favicon-16x16.png\",\n\t\"./favicon/favicon-32x32.png\": \"./src/favicon/favicon-32x32.png\",\n\t\"./favicon/favicon.ico\": \"./src/favicon/favicon.ico\",\n\t\"./img/anpanman.png\": \"./src/img/anpanman.png\",\n\t\"./img/go-giter-adventures.png\": \"./src/img/go-giter-adventures.png\",\n\t\"./img/kazuesasatani.jpg\": \"./src/img/kazuesasatani.jpg\",\n\t\"./img/kazuesasatani2.jpg\": \"./src/img/kazuesasatani2.jpg\",\n\t\"./img/mondrian.png\": \"./src/img/mondrian.png\",\n\t\"./img/scene-it.png\": \"./src/img/scene-it.png\",\n\t\"./index\": \"./src/index.js\",\n\t\"./index.js\": \"./src/index.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^.*$\";\n\n//# sourceURL=webpack:///./src_sync_^.*$?");
 
 /***/ }),
 
@@ -588,6 +588,72 @@ eval("var map = {\n\t\".\": \"./src/index.js\",\n\t\"./\": \"./src/index.js\",\n
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"works\", function() { return works; });\nconst works = [\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/scene-it-starter/',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/scene-it.png'\n    },\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/week5-group-exercise/testimonies.html',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/go-giter-adventures.png'\n    },\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/flexbox-layout-exercises/mondrian.html',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/mondrian.png'\n    },\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/flexbox-layout-exercises/anpanman.html',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/anpanman.png'\n    }\n]\n\n//# sourceURL=webpack:///./src/data.js?");
+
+/***/ }),
+
+/***/ "./src/favicon/android-chrome-192x192.png":
+/*!************************************************!*\
+  !*** ./src/favicon/android-chrome-192x192.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/ec7aa947e935c0920890397de31ecfba.png\";\n\n//# sourceURL=webpack:///./src/favicon/android-chrome-192x192.png?");
+
+/***/ }),
+
+/***/ "./src/favicon/android-chrome-512x512.png":
+/*!************************************************!*\
+  !*** ./src/favicon/android-chrome-512x512.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/142a7ba51c6df876eea2610459a585c4.png\";\n\n//# sourceURL=webpack:///./src/favicon/android-chrome-512x512.png?");
+
+/***/ }),
+
+/***/ "./src/favicon/apple-touch-icon.png":
+/*!******************************************!*\
+  !*** ./src/favicon/apple-touch-icon.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/10442a7fe2408339ff890a008bc23949.png\";\n\n//# sourceURL=webpack:///./src/favicon/apple-touch-icon.png?");
+
+/***/ }),
+
+/***/ "./src/favicon/favicon-16x16.png":
+/*!***************************************!*\
+  !*** ./src/favicon/favicon-16x16.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/c89afbf050ecb6a2cdc3c7997e6dc149.png\";\n\n//# sourceURL=webpack:///./src/favicon/favicon-16x16.png?");
+
+/***/ }),
+
+/***/ "./src/favicon/favicon-32x32.png":
+/*!***************************************!*\
+  !*** ./src/favicon/favicon-32x32.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/16452e301809efec663061f46b6509aa.png\";\n\n//# sourceURL=webpack:///./src/favicon/favicon-32x32.png?");
+
+/***/ }),
+
+/***/ "./src/favicon/favicon.ico":
+/*!*********************************!*\
+  !*** ./src/favicon/favicon.ico ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/c355ae30120e929d2e6207b65d74e6f0.ico\";\n\n//# sourceURL=webpack:///./src/favicon/favicon.ico?");
 
 /***/ }),
 
@@ -620,7 +686,18 @@ eval("module.exports = __webpack_require__.p + \"img/57c0b7cde7684de5c71fe20d343
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/c886cd5e72bae32d33fa894df2c9a973.jpg\";\n\n//# sourceURL=webpack:///./src/img/kazuesasatani.jpg?");
+eval("module.exports = __webpack_require__.p + \"img/724582417416f4d93b3d7766f3bf256c.jpg\";\n\n//# sourceURL=webpack:///./src/img/kazuesasatani.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/kazuesasatani2.jpg":
+/*!************************************!*\
+  !*** ./src/img/kazuesasatani2.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/c886cd5e72bae32d33fa894df2c9a973.jpg\";\n\n//# sourceURL=webpack:///./src/img/kazuesasatani2.jpg?");
 
 /***/ }),
 
@@ -653,7 +730,7 @@ eval("module.exports = __webpack_require__.p + \"img/b3730bdaa58e6664b22d4b52275
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const css = __webpack_require__(/*! ./../scss/index.scss */ \"./scss/index.scss\")\nconst Granim = __webpack_require__(/*! granim */ \"./node_modules/granim/index.js\")\nconst Masonry = __webpack_require__(/*! masonry-layout */ \"./node_modules/masonry-layout/masonry.js\")\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")\nconst { works } = __webpack_require__(/*! ./data */ \"./src/data.js\")\n// const img = require('./../img/scene-it.png')\n\nconsole.log(__webpack_require__.p)\n\nconst navbar = document.querySelector('nav#main-navbar')\nconst granim = document.querySelector('#canvas-basic')\nconst granimAbout = document.querySelector('#canvas-basic-about')\nconst granimPortfolio = document.querySelector('#canvas-basic-portfolio')\nconst allGrids = document.querySelector('#portfolioMain .grid')\nconst portfolio = document.querySelector('#Portfolio')\nconst about = document.querySelector('#About')\nconst cover = document.querySelector('#Cover')\n\nconst imageLoadedCount = 0\n\nconst portfolioHtmlArray = works.map(function(obj){\n  const loadedImage = __webpack_require__(\"./src sync recursive ^.*$\")(`${obj.img}`)\n  return `\n  <div class=\"grid-item\">\n    <div class=\"grid-item-inner card\">\n      <div class=\"portfolio-filter\">\n      <div class=\"portfolio-title\">${obj.title}</div>\n      <div class=\"portfolio-text\"><p>${obj.text}</p></div>\n      <div class=\"portfolio-technologies\"><p>${obj.technologies}</p></div>\n      <div class=\"portfolio-links\">\n        <a href=\"${obj.url}\"><i class=\"fas fa-external-link-square-alt fa-5x\"></i></a>\n        <a href=\"${obj.githubUrl}\"><i class=\"fab fa-github fa-5x\"></i></a>\n      </div>\n      </div>\n      <img src=\"${loadedImage}\">\n    </div>\n  </div>\n  `\n})\n\nallGrids.innerHTML = portfolioHtmlArray.join('')\n// console.log(portfolioHtmlArray)\n\nconst imgElements = document.querySelectorAll('img')\n\nconst promiseArray = []\nimgElements.forEach(function (imgElement) {\n  promiseArray.push(imageLoaded(imgElement))\n})\n\nconst timeout = ms => {\n  return new Promise(function (resolveFn, rejectFn) {\n    setTimeout(function () {\n      rejectFn('Timeout! ' + ms + 'ms')\n    }, ms)\n  })\n}\n\nPromise.race([Promise.all(promiseArray), timeout(1000)])\n  .then(function (responseArray) {\n    // console.log(responseArray)\n    // console.log('All images are loaded....')\n  })\n  .catch(function (error) {\n    container.innerHTML = ''\n    console.log(error)\n  })\n  .finally(function () {\n    afterImageLoaded()\n  })\n\nfunction masonry () {\n  return new Masonry(document.querySelector('.grid'), {\n    itemSelector: '.grid-item',\n    columnWidth: 400,\n    fitWidth: true\n  })\n}\n\nfunction imageLoaded (imgElement) {\n  return new Promise(function (resolveFn, rejectFn) {\n    imgElement.addEventListener('load', function () {\n      resolveFn(imgElement.id)\n    })\n  })\n}\n\nfunction setHeightAndLocation (element, mirrorElement) {\n  const bodyRect = document.body.getBoundingClientRect()\n  const mirrorRect = mirrorElement.getBoundingClientRect()\n  element.style.height = `${mirrorRect.height}px`\n  element.style.top = `${mirrorRect.top - bodyRect.top}px`\n}\n\nfunction generateGranim(elementId, direction, gradientsArray){\n  return new Granim({\n    element: '#' + elementId,\n    direction: direction,\n    isPausedWhenNotInView: true,\n    states: {\n      'default-state': {\n        gradients: gradientsArray\n      }\n    }\n  })\n}\n\nfunction generatePortfolio(){\n  const portfolio = allGrids.querySelectorAll('.grid-item')\n  portfolio.forEach(function(elem){\n    const img = elem.getElementsByTagName(\"IMG\")[0]\n    const filter = elem.getElementsByClassName(\"portfolio-filter\")[0]\n    const imgRect = img.getBoundingClientRect()\n    filter.style.width = imgRect.width\n    filter.style.height = imgRect.height\n    \n  })\n}\n\nfunction afterImageLoaded () {\n  masonry()\n  setHeightAndLocation(granim, cover)\n  setHeightAndLocation(granimAbout, about)\n  setHeightAndLocation(granimPortfolio, portfolio)\n\n  generateGranim('canvas-basic', 'left-right', [\n    ['#e1eec3', '#f05053'],\n    ['#ff9966', '#ff5e62'],\n    ['#00F260', '#0575E6']\n  ])\n\n  generateGranim('canvas-basic-about', 'left-right', [\n    ['#00F260', '#0575E6'],\n    ['#e1eec3', '#f05053'],\n    ['#ff9966', '#ff5e62']\n  ])\n\n  generateGranim('canvas-basic-portfolio', 'left-right', [\n    ['#ff9966', '#ff5e62'],\n    ['#00F260', '#0575E6'],\n    ['#e1eec3', '#f05053']\n  ])\n\n  generatePortfolio()\n}\n\n$(function () {\n  $('a[href^=\"#\"]').click(function () {\n    let speed = 500\n    let href = $(this).attr('href')\n    let target = $(href == '#' || href == '' ? 'html' : href)\n    let position = target.offset().top\n    $('html, body').animate({ scrollTop: position }, speed, 'swing')\n    return false\n  })\n})\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const css = __webpack_require__(/*! ./../scss/index.scss */ \"./scss/index.scss\")\nconst Granim = __webpack_require__(/*! granim */ \"./node_modules/granim/index.js\")\nconst Masonry = __webpack_require__(/*! masonry-layout */ \"./node_modules/masonry-layout/masonry.js\")\nconst $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")\nconst { works } = __webpack_require__(/*! ./data */ \"./src/data.js\")\n// const favicon = require('./favicon/favicon.ico')\n\n// console.log(__webpack_public_path__)\n\nconst navbar = document.querySelector('nav#main-navbar')\nconst granim = document.querySelector('#canvas-basic')\nconst granimAbout = document.querySelector('#canvas-basic-about')\nconst granimPortfolio = document.querySelector('#canvas-basic-portfolio')\nconst granimExperience = document.querySelector('#canvas-basic-experience')\nconst allGrids = document.querySelector('#portfolioMain .grid')\nconst portfolio = document.querySelector('#Portfolio')\nconst about = document.querySelector('#About')\nconst cover = document.querySelector('#Cover')\nconst experience = document.querySelector('#Experience')\n\nconst imgSegakazzz = document.querySelector('#img-segakazzz')\nimgSegakazzz.innerHTML = selfPhotoHtml()\n\nfunction selfPhotoHtml (){\n  const loadedImage = __webpack_require__(/*! ./img/kazuesasatani.jpg */ \"./src/img/kazuesasatani.jpg\")\n  return `<img src=\"${loadedImage}\">`\n}\n\nconst portfolioHtmlArray = works.map(function(obj){\n  const loadedImage = __webpack_require__(\"./src sync recursive ^.*$\")(`${obj.img}`)\n  return `\n  <div class=\"grid-item\">\n    <div class=\"grid-item-inner card\">\n      <div class=\"portfolio-filter\">\n      <div class=\"portfolio-title\">${obj.title}</div>\n      <div class=\"portfolio-text\"><p>${obj.text}</p></div>\n      <div class=\"portfolio-technologies\"><p>${obj.technologies}</p></div>\n      <div class=\"portfolio-links\">\n        <a href=\"${obj.url}\"><i class=\"fas fa-external-link-square-alt fa-3x\"></i></a>\n        <a href=\"${obj.githubUrl}\"><i class=\"fab fa-github fa-3x\"></i></a>\n      </div>\n      </div>\n      <img src=\"${loadedImage}\">\n    </div>\n  </div>\n  `\n})\n\nallGrids.innerHTML = portfolioHtmlArray.join('')\n// console.log(portfolioHtmlArray)\n\nconst imgElements = document.querySelectorAll('img')\n\nconst promiseArray = []\nimgElements.forEach(function (imgElement) {\n  promiseArray.push(imageLoaded(imgElement))\n})\n\nconst timeout = ms => {\n  return new Promise(function (resolveFn, rejectFn) {\n    setTimeout(function () {\n      rejectFn('Timeout! ' + ms + 'ms')\n    }, ms)\n  })\n}\n\nPromise.race([Promise.all(promiseArray), timeout(1000)])\n  .then(function (responseArray) {\n    // console.log(responseArray)\n    // console.log('All images are loaded....')\n  })\n  .catch(function (error) {\n    container.innerHTML = ''\n    console.log(error)\n  })\n  .finally(function () {\n    afterImageLoaded()\n  })\n\nfunction masonry () {\n  return new Masonry(document.querySelector('.grid'), {\n    itemSelector: '.grid-item',\n    columnWidth: 400,\n    fitWidth: true\n  })\n}\n\nfunction imageLoaded (imgElement) {\n  return new Promise(function (resolveFn, rejectFn) {\n    imgElement.addEventListener('load', function () {\n      resolveFn(imgElement.id)\n    })\n  })\n}\n\nfunction setHeightAndLocation (element, mirrorElement) {\n  const bodyRect = document.body.getBoundingClientRect()\n  const mirrorRect = mirrorElement.getBoundingClientRect()\n  element.style.height = `${mirrorRect.height}px`\n  element.style.top = `${mirrorRect.top - bodyRect.top}px`\n}\n\nfunction generateGranim(elementId, direction, gradientsArray){\n  return new Granim({\n    element: '#' + elementId,\n    direction: direction,\n    isPausedWhenNotInView: true,\n    states: {\n      'default-state': {\n        gradients: gradientsArray\n      }\n    }\n  })\n}\n\nfunction generatePortfolio(){\n  const portfolio = allGrids.querySelectorAll('.grid-item')\n  portfolio.forEach(function(elem){\n    const img = elem.getElementsByTagName(\"IMG\")[0]\n    const filter = elem.getElementsByClassName(\"portfolio-filter\")[0]\n    const imgRect = img.getBoundingClientRect()\n    filter.style.width = imgRect.width\n    filter.style.height = imgRect.height\n    \n  })\n}\n\nfunction afterImageLoaded () {\n  masonry()\n  setHeightAndLocation(granim, cover)\n  setHeightAndLocation(granimAbout, about)\n  setHeightAndLocation(granimPortfolio, portfolio)\n  setHeightAndLocation(granimExperience, experience)\n\n  generateGranim('canvas-basic', 'top-bottom', [\n    ['#e1eec3', '#f05053'],\n    ['#ff9966', '#ff5e62'],\n    ['#00F260', '#0575E6']\n  ])\n\n  generateGranim('canvas-basic-about', 'left-right', [\n    ['#00F260', '#0575E6'],\n    ['#e1eec3', '#f05053'],\n    ['#ff9966', '#ff5e62']\n  ])\n\n  generateGranim('canvas-basic-portfolio', 'left-right', [\n    ['#ff9966', '#ff5e62'],\n    ['#00F260', '#0575E6'],\n    ['#e1eec3', '#f05053']\n  ])\n\n  generateGranim('canvas-basic-experience', 'top-bottom', [\n    ['#ff9966', '#ff5e62'],\n    ['#00F260', '#0575E6'],\n    ['#e1eec3', '#f05053']\n  ])\n\n  generatePortfolio()\n}\n\n$(function () {\n  $('a[href^=\"#\"]').click(function () {\n    let speed = 500\n    let href = $(this).attr('href')\n    let target = $(href == '#' || href == '' ? 'html' : href)\n    let position = target.offset().top\n    $('html, body').animate({ scrollTop: position }, speed, 'swing')\n    return false\n  })\n})\n\nconst burger = document.querySelector('.burger');\nconst menu = document.querySelector('#'+burger.dataset.target);\nburger.addEventListener('click', function() {\n    burger.classList.toggle('is-active');\n    menu.classList.toggle('is-active');\n});\n\nwindow.onresize = function () {\n  afterImageLoaded()\n};\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
