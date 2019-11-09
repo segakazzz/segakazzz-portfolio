@@ -575,7 +575,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\".\": \"./src/index.js\",\n\t\"./\": \"./src/index.js\",\n\t\"./data\": \"./src/data.js\",\n\t\"./data.js\": \"./src/data.js\",\n\t\"./favicon/android-chrome-192x192.png\": \"./src/favicon/android-chrome-192x192.png\",\n\t\"./favicon/android-chrome-512x512.png\": \"./src/favicon/android-chrome-512x512.png\",\n\t\"./favicon/apple-touch-icon.png\": \"./src/favicon/apple-touch-icon.png\",\n\t\"./favicon/favicon-16x16.png\": \"./src/favicon/favicon-16x16.png\",\n\t\"./favicon/favicon-32x32.png\": \"./src/favicon/favicon-32x32.png\",\n\t\"./favicon/favicon.ico\": \"./src/favicon/favicon.ico\",\n\t\"./faviconLoader\": \"./src/faviconLoader\",\n\t\"./faviconLoader.js\": \"./src/faviconLoader.js\",\n\t\"./img/anpanman.png\": \"./src/img/anpanman.png\",\n\t\"./img/go-giter-adventures.png\": \"./src/img/go-giter-adventures.png\",\n\t\"./img/kazuesasatani.jpg\": \"./src/img/kazuesasatani.jpg\",\n\t\"./img/kazuesasatani2.jpg\": \"./src/img/kazuesasatani2.jpg\",\n\t\"./img/mondrian.png\": \"./src/img/mondrian.png\",\n\t\"./img/scene-it.png\": \"./src/img/scene-it.png\",\n\t\"./index\": \"./src/index.js\",\n\t\"./index.js\": \"./src/index.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^.*$\";\n\n//# sourceURL=webpack:///./src_sync_^.*$?");
+eval("var map = {\n\t\".\": \"./src/index.js\",\n\t\"./\": \"./src/index.js\",\n\t\"./data\": \"./src/data.js\",\n\t\"./data.js\": \"./src/data.js\",\n\t\"./favicon/android-chrome-192x192.png\": \"./src/favicon/android-chrome-192x192.png\",\n\t\"./favicon/android-chrome-512x512.png\": \"./src/favicon/android-chrome-512x512.png\",\n\t\"./favicon/apple-touch-icon.png\": \"./src/favicon/apple-touch-icon.png\",\n\t\"./favicon/favicon-16x16.png\": \"./src/favicon/favicon-16x16.png\",\n\t\"./favicon/favicon-32x32.png\": \"./src/favicon/favicon-32x32.png\",\n\t\"./favicon/favicon.ico\": \"./src/favicon/favicon.ico\",\n\t\"./faviconLoader\": \"./src/faviconLoader\",\n\t\"./faviconLoader.js\": \"./src/faviconLoader.js\",\n\t\"./img/anpanman.png\": \"./src/img/anpanman.png\",\n\t\"./img/go-giter-adventures.png\": \"./src/img/go-giter-adventures.png\",\n\t\"./img/kazuesasatani.jpg\": \"./src/img/kazuesasatani.jpg\",\n\t\"./img/kazuesasatani2.jpg\": \"./src/img/kazuesasatani2.jpg\",\n\t\"./img/mondrian.png\": \"./src/img/mondrian.png\",\n\t\"./img/noac-us-website.png\": \"./src/img/noac-us-website.png\",\n\t\"./img/scene-it.png\": \"./src/img/scene-it.png\",\n\t\"./img/this-website.png\": \"./src/img/this-website.png\",\n\t\"./img/tumbler-clone.png\": \"./src/img/tumbler-clone.png\",\n\t\"./index\": \"./src/index.js\",\n\t\"./index.js\": \"./src/index.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^.*$\";\n\n//# sourceURL=webpack:///./src_sync_^.*$?");
 
 /***/ }),
 
@@ -587,7 +587,7 @@ eval("var map = {\n\t\".\": \"./src/index.js\",\n\t\"./\": \"./src/index.js\",\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"works\", function() { return works; });\nconst works = [\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/scene-it-starter/',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/scene-it.png'\n    },\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/week5-group-exercise/testimonies.html',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/go-giter-adventures.png'\n    },\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/flexbox-layout-exercises/mondrian.html',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/mondrian.png'\n    },\n    {\n        title: 'Scene-It',\n        text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n        technologies: 'Javascript, CSS, HTML',\n        url: 'https://segakazzz.github.io/flexbox-layout-exercises/anpanman.html',\n        githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n        img: './img/anpanman.png'\n    }\n]\n\n//# sourceURL=webpack:///./src/data.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"works\", function() { return works; });\nconst works = [\n  {\n    title: 'Scene-It',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/scene-it-starter/',\n    githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n    img: './img/scene-it.png'\n  },\n  {\n    title: 'Scene-It',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/week5-group-exercise/testimonies.html',\n    githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n    img: './img/go-giter-adventures.png'\n  },\n  {\n    title: 'Scene-It',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/flexbox-layout-exercises/mondrian.html',\n    githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n    img: './img/mondrian.png'\n  },\n  {\n    title: 'Scene-It',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/flexbox-layout-exercises/anpanman.html',\n    githubUrl: 'https://segakazzz.github.io/scene-it-starter/',\n    img: './img/anpanman.png'\n  },\n  {\n    title: 'Tumbler Clone',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://digitalcrafts-tumblr-clone.herokuapp.com',\n    githubUrl: 'https://github.com/tjeve/phase-2-project-tumblr-clone',\n    img: './img/tumbler-clone.png'\n  },\n  {\n    title: 'GoGITER Adventures',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/week5-group-exercise',\n    githubUrl: 'https://segakazzz.github.io/week5-group-exercise',\n    img: './img/go-giter-adventures.png'\n  },\n  {\n    title: 'This Website',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/week5-group-exercise',\n    githubUrl: 'https://segakazzz.github.io/week5-group-exercise',\n    img: './img/this-website.png'\n  },\n  {\n    title: 'NOAC US Website',\n    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',\n    technologies: 'Javascript, CSS, HTML',\n    url: 'https://segakazzz.github.io/week5-group-exercise',\n    githubUrl: 'https://segakazzz.github.io/week5-group-exercise',\n    img: './img/noac-us-website.png'\n  },\n]\n\n\n//# sourceURL=webpack:///./src/data.js?");
 
 /***/ }),
 
@@ -734,6 +734,17 @@ eval("module.exports = __webpack_require__.p + \"img/75dcb091ba748f4e08e3ee5c1f2
 
 /***/ }),
 
+/***/ "./src/img/noac-us-website.png":
+/*!*************************************!*\
+  !*** ./src/img/noac-us-website.png ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/0d69ce70693e87bfad1b9ce04c282577.png\";\n\n//# sourceURL=webpack:///./src/img/noac-us-website.png?");
+
+/***/ }),
+
 /***/ "./src/img/scene-it.png":
 /*!******************************!*\
   !*** ./src/img/scene-it.png ***!
@@ -742,6 +753,28 @@ eval("module.exports = __webpack_require__.p + \"img/75dcb091ba748f4e08e3ee5c1f2
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/b3730bdaa58e6664b22d4b522758cc28.png\";\n\n//# sourceURL=webpack:///./src/img/scene-it.png?");
+
+/***/ }),
+
+/***/ "./src/img/this-website.png":
+/*!**********************************!*\
+  !*** ./src/img/this-website.png ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/398ab08666a611862df84fc1d93f8c4a.png\";\n\n//# sourceURL=webpack:///./src/img/this-website.png?");
+
+/***/ }),
+
+/***/ "./src/img/tumbler-clone.png":
+/*!***********************************!*\
+  !*** ./src/img/tumbler-clone.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/f28f477db0534803bc71f6c1c3d0fdab.png\";\n\n//# sourceURL=webpack:///./src/img/tumbler-clone.png?");
 
 /***/ }),
 
