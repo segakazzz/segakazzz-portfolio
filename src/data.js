@@ -63,4 +63,12 @@ export const works = [
     githubUrl: 'https://segakazzz.github.io/week5-group-exercise',
     img: './img/noac-us-website.png'
   },
+  {
+    title: 'Hungry Eyes',
+    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',
+    technologies: 'Javascript, CSS, HTML',
+    url: 'https://digitalcrafts-ph-1566664527167.firebaseapp.com/',
+    githubUrl: 'https://github.com/tjeve/Phase-1-Project',
+    img: './img/hungry-eyes.png'
+  },
 ]
