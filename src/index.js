@@ -3,6 +3,8 @@ const Granim = require('granim')
 const Masonry = require('masonry-layout')
 const $ = require('jquery')
 const { works } = require('./data')
+const loadFavicon = require('./faviconLoader.js')
+
 // const favicon = require('./favicon/favicon.ico')
 
 // console.log(__webpack_public_path__)
@@ -17,9 +19,9 @@ const portfolio = document.querySelector('#Portfolio')
 const about = document.querySelector('#About')
 const cover = document.querySelector('#Cover')
 const experience = document.querySelector('#Experience')
-
 const imgSegakazzz = document.querySelector('#img-segakazzz')
 imgSegakazzz.innerHTML = selfPhotoHtml()
+loadFavicon()
 
 function selfPhotoHtml (){
   const loadedImage = require('./img/kazuesasatani.jpg')
