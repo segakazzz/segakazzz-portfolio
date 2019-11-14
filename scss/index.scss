@@ -238,13 +238,26 @@ canvas {
         .portfolio-title{
             font-size: 2rem;
         }
+
+        .portfolio-technologies{
+            p {
+                font-size: 1.4rem;
+            }
+        }
+
         .portfolio-filter:hover {
             opacity: 0.9;
+            transition:  opacity 0.1s linear;
+            div {
+                visibility: visible;
+                transition: visibility 0.1s;
+            }
         }
         .portfolio-filter {
             background-color: rgb(88, 88, 88);
             color: whitesmoke;
             opacity: 0.4;
+            transition:  opacity 0.1s linear;
             position: absolute;
             top: 0;
             left: 0;
@@ -260,18 +273,20 @@ canvas {
             a:active {
                 text-decoration: none !important;
             }
-    
             a {
                 color: whitesmoke;
             }
-            p {
-                font-size: 1rem;
-            }
+            // p {
+            //     font-size: 1rem;
+            // }
         }
         .portfolio-links{
             display: flex;
         }
-
+        .portfolio-title, .portfolio-links, .portfolio-text, .portfolio-technologies {
+            visibility: hidden;
+            transition: visibility 0.1s;
+        }
 
     }
 

@@ -4,6 +4,7 @@ const Masonry = require('masonry-layout')
 const $ = require('jquery')
 const { works } = require('./data')
 const loadFavicon = require('./faviconLoader.js')
+const { shuffle } = require('./shuffle.js')
 
 // const favicon = require('./favicon/favicon.ico')
 
@@ -28,18 +29,19 @@ function selfPhotoHtml (){
   return `<img src="${loadedImage}">`
 }
 
-const portfolioHtmlArray = works.map(function(obj){
+const portfolioHtmlArray = shuffle(works).map(function(obj){
   const loadedImage = require(`${obj.img}`)
   return `
   <div class="grid-item">
     <div class="grid-item-inner card">
       <div class="portfolio-filter">
       <div class="portfolio-title">${obj.title}</div>
-      <div class="portfolio-text"><p>${obj.text}</p></div>
       <div class="portfolio-technologies"><p>${obj.technologies}</p></div>
       <div class="portfolio-links">
-        <a href="${obj.url}"><i class="fas fa-external-link-square-alt fa-3x"></i></a>
-        <a href="${obj.githubUrl}"><i class="fab fa-github fa-3x"></i></a>
+        ${obj.url ? '<a href="' + obj.url 
+          + '" target="_blank"><i class="fas fa-external-link-square-alt fa-3x"></i></a>' : ''}
+        ${obj.githubUrl ? '<a href="' 
+          + obj.githubUrl + '" target="_blank"><i class="fab fa-github fa-3x"></i></a>' : ''}
       </div>
       </div>
       <img src="${loadedImage}">
@@ -47,6 +49,8 @@ const portfolioHtmlArray = works.map(function(obj){
   </div>
   `
 })
+{/* <div class="portfolio-text"><p>${obj.text}</p></div> */}
+
 
 allGrids.innerHTML = portfolioHtmlArray.join('')
 // console.log(portfolioHtmlArray)
@@ -181,4 +185,6 @@ burger.addEventListener('click', function() {
 
 window.onresize = function () {
   afterImageLoaded()
-};
+}
+
+

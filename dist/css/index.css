@@ -11662,12 +11662,19 @@ canvas {
         left: 0; }
     #Portfolio .grid-item .portfolio-title {
       font-size: 2rem; }
+    #Portfolio .grid-item .portfolio-technologies p {
+      font-size: 1.4rem; }
     #Portfolio .grid-item .portfolio-filter:hover {
-      opacity: 0.9; }
+      opacity: 0.9;
+      transition: opacity 0.1s linear; }
+      #Portfolio .grid-item .portfolio-filter:hover div {
+        visibility: visible;
+        transition: visibility 0.1s; }
     #Portfolio .grid-item .portfolio-filter {
       background-color: #585858;
       color: whitesmoke;
       opacity: 0.4;
+      transition: opacity 0.1s linear;
       position: absolute;
       top: 0;
       left: 0;
@@ -11683,10 +11690,11 @@ canvas {
         text-decoration: none !important; }
       #Portfolio .grid-item .portfolio-filter a {
         color: whitesmoke; }
-      #Portfolio .grid-item .portfolio-filter p {
-        font-size: 1rem; }
     #Portfolio .grid-item .portfolio-links {
       display: flex; }
+    #Portfolio .grid-item .portfolio-title, #Portfolio .grid-item .portfolio-links, #Portfolio .grid-item .portfolio-text, #Portfolio .grid-item .portfolio-technologies {
+      visibility: hidden;
+      transition: visibility 0.1s; }
   #Portfolio .grid {
     margin: 0 auto; }
   #Portfolio .box {
