@@ -11551,10 +11551,9 @@ canvas {
     color: whitesmoke; }
   #segakazzz .link-icons {
     display: flex;
-    justify-content: center;
-    margin: 25px 0; }
-    #segakazzz .link-icons .link-icon {
-      margin: 0 50px; }
+    justify-content: space-between;
+    max-width: 500px;
+    margin: auto; }
     #segakazzz .link-icons a:hover,
     #segakazzz .link-icons a:visited,
     #segakazzz .link-icons a:link,
@@ -11652,7 +11651,7 @@ canvas {
     text-align: center;
     font-size: 1.5rem; }
   #Portfolio .grid-item {
-    width: 400px;
+    width: 325px;
     padding: 10px; }
     #Portfolio .grid-item .grid-item-inner {
       position: relative; }

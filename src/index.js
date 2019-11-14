@@ -86,7 +86,7 @@ Promise.race([Promise.all(promiseArray), timeout(1000)])
 function masonry () {
   return new Masonry(document.querySelector('.grid'), {
     itemSelector: '.grid-item',
-    columnWidth: 400,
+    columnWidth: 325,
     fitWidth: true
   })
 }

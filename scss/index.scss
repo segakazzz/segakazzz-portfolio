@@ -50,13 +50,10 @@ canvas {
 
     .link-icons {
         display: flex;
-        justify-content: center;
-        margin: 25px 0;
-
-        .link-icon {
-            margin: 0 50px;
-        }
-
+        justify-content: space-between;
+        max-width: 500px;
+        margin: auto;
+  
         a:hover,
         a:visited,
         a:link,
@@ -223,7 +220,7 @@ canvas {
 
     .grid-item {
         // background: white;
-        width: 400px;
+        width: 325px;
         padding: 10px;
 
         .grid-item-inner {
