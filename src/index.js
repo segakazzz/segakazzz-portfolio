@@ -84,9 +84,15 @@ Promise.race([Promise.all(promiseArray), timeout(1000)])
   })
 
 function masonry () {
+  const bodyRect = document.body.getBoundingClientRect()
+  const width = bodyRect.width > 400 ? 325 : 275 
+  allGrids.querySelectorAll('.grid-item').forEach(function(elem){
+    elem.style.width = width + 'px'
+  })
+
   return new Masonry(document.querySelector('.grid'), {
     itemSelector: '.grid-item',
-    columnWidth: 325,
+    columnWidth: width,
     fitWidth: true
   })
 }

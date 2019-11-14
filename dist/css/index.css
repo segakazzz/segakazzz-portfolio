@@ -11625,7 +11625,7 @@ canvas {
     align-items: center;
     justify-content: center; }
     #Experience #img-segakazzz img, #About #img-segakazzz img {
-      max-width: 350px;
+      max-width: 300px;
       border-radius: 50%; }
   #Experience .space-20px, #About .space-20px {
     height: 20px; }
@@ -11662,7 +11662,9 @@ canvas {
     #Portfolio .grid-item .portfolio-title {
       font-size: 2rem; }
     #Portfolio .grid-item .portfolio-technologies p {
-      font-size: 1.4rem; }
+      font-size: 1.2rem;
+      margin: 5px;
+      text-align: center; }
     #Portfolio .grid-item .portfolio-filter:hover {
       opacity: 0.9;
       transition: opacity 0.1s linear; }
