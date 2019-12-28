@@ -61,4 +61,12 @@ export const works = [
     githubUrl: 'https://github.com/tjeve/Phase-1-Project',
     img: './img/hungry-eyes.png'
   },
+  {
+    title: 'Othello Game',
+    text: 'sakjsldkf lksdjlkfjsdlkgjksdgsdlg sdlgsdl',
+    technologies: 'React, Redux, SCSS',
+    url: 'https://othello-game-react.firebaseapp.com/',
+    githubUrl: 'https://github.com/segakazzz/react-project',
+    img: './img/othello.png'
+  },
 ]
